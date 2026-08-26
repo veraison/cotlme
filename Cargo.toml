@@ -1,0 +1,23 @@
+[package]
+name = "cotlme"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+chrono = "0.4.45"
+ciborium = "0.2.2"
+clap = { version = "4.6.6", features = ["derive"] }
+corim-rs = { version = "0.2.0", features = ["openssl"] }
+dialoguer = "0.12.0"
+openssl = "0.10.81"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+thiserror = "2.0.20"
+uuid = { version = "1.25.0", features = ["v4"] }
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+strip = true
