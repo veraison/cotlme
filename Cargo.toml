@@ -2,6 +2,17 @@
 name = "cotlme"
 version = "0.1.0"
 edition = "2024"
+description = "A CLI tool written in Rust for interacting with CoTLs"
+license = "MIT"
+repository = "https://github.com/veraison/cotlme"
+keywords = [ "cotl", "ietf", "rats", "corim" ]
+categories = [
+    "os",
+    "os::linux-apis",
+    "parsing",
+    "network-programming",
+    "hardware-support",
+]
 
 [dependencies]
 anyhow = "1.0.104"
