@@ -21,3 +21,8 @@ opt-level = 3
 lto = "fat"
 codegen-units = 1
 strip = true
+
+[lints.clippy]
+all = { level = "deny", priority = -1 }
+cargo = { level = "deny", priority = -1 }
+multiple_crate_versions = "allow"
